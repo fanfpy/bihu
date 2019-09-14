@@ -1,0 +1,644 @@
+2019/09/13 22:54:11  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.env          => default
+2019/09/13 22:54:11  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.pid          => 704
+2019/09/13 22:54:11  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.devMode      => true
+2019/09/13 22:54:11  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : jdk.version      => 1.8.0_162
+2019/09/13 22:54:11  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.dir         => D:\projects\bihu
+2019/09/13 22:54:11  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : java.io.tmpdir   => C:\Users\fanfp\AppData\Local\Temp\
+2019/09/13 22:54:11  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.timezone    => Asia/Shanghai
+2019/09/13 22:54:11  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : file.encoding    => UTF-8
+2019/09/13 22:54:11  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.classpath    => D:/projects/bihu/target/classes/
+2019/09/13 22:54:11  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /get_question_list
+2019/09/13 22:54:11  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /question/:qid/answer/:aid
+2019/09/13 22:54:12  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Register bean: [top.fanfpy.config.LoadConfig@20ffd8c3, top.fanfpy.controller.IndexController@5e143bf7, com.blade.Environment@57617ef9, top.fanfpy.dao.AnswerDao@71b3214f, top.fanfpy.dao.QuestionDao@2fd4c67a, top.fanfpy.dao.TopicDao@50609bf4, top.fanfpy.dao.QuestionTopicDao@caaa1b7, top.fanfpy.config.LoadConfig@20ffd8c3, top.fanfpy.dao.UserDao@647b5034, top.fanfpy.controller.QuestionController@6d95bdd7]
+2019/09/13 22:54:12  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2019/09/13 22:54:12  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2019/09/13 22:54:12 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Execute SQL => show tables
+2019/09/13 22:54:12 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Parameters  => []
+2019/09/13 22:54:12 DEBUG [          _(:3」∠)_ ]                       o.s.Query : total: 26 ms; executed update [No name]
+2019/09/13 22:54:12  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Use NioEventLoopGroup
+2019/09/13 22:54:13  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade initialize successfully, Time elapsed: 2029 ms
+2019/09/13 22:54:13  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade start with  0.0.0.0:9000 
+2019/09/13 22:54:13  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Open browser access http://127.0.0.1:9000 ⚡
+
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [2]
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 18 ms, execution: 4 ms, reading and parsing: 14 ms; executed [null]
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? LIMIT 1
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [2]
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 2 ms, reading and parsing: 0 ms; executed [null]
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [2]
+2019/09/13 22:55:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/13 22:55:05  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200   122ms  GET    /question/2/answer/2
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [2]
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? LIMIT 1
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [2]
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 2 ms, reading and parsing: 0 ms; executed [null]
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [2]
+2019/09/13 22:55:08 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 3 ms, execution: 1 ms, reading and parsing: 2 ms; executed [null]
+2019/09/13 22:55:08  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200    15ms  GET    /question/2/answer/2
+2019/09/14 11:29:39 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 11:29:39 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [2]
+2019/09/14 11:29:39 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 5 ms, execution: 4 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 11:29:39 ERROR [   worker@thread-2 ]       c.b.s.n.HttpServerHandler :  500          GET /question/2/answer/2
+2019/09/14 11:29:39 ERROR [   worker@thread-2 ] c.b.m.h.DefaultExceptionHandler :  java.lang.NullPointerException
+	at top.fanfpy.controller.QuestionController.getQuestionAndAnswer(QuestionController.java:38)
+	at top.fanfpy.controller.QuestionControllerMethodAccess.invoke(Unknown Source)
+	at com.blade.reflectasm.MethodAccess.invoke(MethodAccess.java:43)
+	at com.blade.server.netty.RouteMethodHandler.routeHandle(RouteMethodHandler.java:256)
+	at com.blade.server.netty.RouteMethodHandler.handle(RouteMethodHandler.java:87)
+	at com.blade.server.netty.HttpServerHandler.executeLogic(HttpServerHandler.java:158)
+	at java.util.concurrent.CompletableFuture.uniApply(CompletableFuture.java:602)
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:577)
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019/09/14 11:30:26 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 11:30:26 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 11:30:26 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 11:30:26 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 11:30:26 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 11:30:26 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 11:30:26 ERROR [   worker@thread-2 ]       c.b.s.n.HttpServerHandler :  500          GET /question/24135486/answer/0
+2019/09/14 11:30:26 ERROR [   worker@thread-2 ] c.b.m.h.DefaultExceptionHandler :  java.lang.NullPointerException
+	at top.fanfpy.controller.QuestionController.getQuestionAndAnswer(QuestionController.java:41)
+	at top.fanfpy.controller.QuestionControllerMethodAccess.invoke(Unknown Source)
+	at com.blade.reflectasm.MethodAccess.invoke(MethodAccess.java:43)
+	at com.blade.server.netty.RouteMethodHandler.routeHandle(RouteMethodHandler.java:256)
+	at com.blade.server.netty.RouteMethodHandler.handle(RouteMethodHandler.java:87)
+	at com.blade.server.netty.HttpServerHandler.executeLogic(HttpServerHandler.java:158)
+	at java.util.concurrent.CompletableFuture.uniApply(CompletableFuture.java:602)
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:577)
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019/09/14 11:30:27 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 11:30:27 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 11:30:27 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 11:30:27 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 11:30:27 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 11:30:27 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 11:30:27 ERROR [   worker@thread-2 ]       c.b.s.n.HttpServerHandler :  500          GET /question/24135486/answer/0
+2019/09/14 11:30:27 ERROR [   worker@thread-2 ] c.b.m.h.DefaultExceptionHandler :  java.lang.NullPointerException
+	at top.fanfpy.controller.QuestionController.getQuestionAndAnswer(QuestionController.java:41)
+	at top.fanfpy.controller.QuestionControllerMethodAccess.invoke(Unknown Source)
+	at com.blade.reflectasm.MethodAccess.invoke(MethodAccess.java:43)
+	at com.blade.server.netty.RouteMethodHandler.routeHandle(RouteMethodHandler.java:256)
+	at com.blade.server.netty.RouteMethodHandler.handle(RouteMethodHandler.java:87)
+	at com.blade.server.netty.HttpServerHandler.executeLogic(HttpServerHandler.java:158)
+	at java.util.concurrent.CompletableFuture.uniApply(CompletableFuture.java:602)
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:577)
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019/09/14 11:30:34 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 11:30:34 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 11:30:34 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 11:30:57 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 11:30:57 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 11:30:57 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 5 ms, execution: 4 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 11:32:22 ERROR [   worker@thread-2 ]       c.b.s.n.HttpServerHandler :  500          GET /question/24135486/answer/0
+2019/09/14 11:32:22  WARN [ HikariPool-1 housekeeper ]              c.z.h.p.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m29s75ms675µs200ns).
+2019/09/14 11:32:22 ERROR [   worker@thread-2 ] c.b.m.h.DefaultExceptionHandler :  java.lang.NullPointerException
+	at top.fanfpy.controller.QuestionController.getQuestionAndAnswer(QuestionController.java:41)
+	at top.fanfpy.controller.QuestionControllerMethodAccess.invoke(Unknown Source)
+	at com.blade.reflectasm.MethodAccess.invoke(MethodAccess.java:43)
+	at com.blade.server.netty.RouteMethodHandler.routeHandle(RouteMethodHandler.java:256)
+	at com.blade.server.netty.RouteMethodHandler.handle(RouteMethodHandler.java:87)
+	at com.blade.server.netty.HttpServerHandler.executeLogic(HttpServerHandler.java:158)
+	at java.util.concurrent.CompletableFuture.uniApply(CompletableFuture.java:602)
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:577)
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019/09/14 11:33:45 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 11:33:45 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 11:33:45 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 11:33:49 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 11:33:49 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 11:33:49 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 11:33:49 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? LIMIT 1
+2019/09/14 11:33:49 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 11:33:49 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 11:33:49 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 11:33:49 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 11:33:49 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 2 ms, execution: 2 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 11:33:49  INFO [   worker@thread-2 ]       c.b.s.n.HttpServerHandler :  200  4556ms  GET    /question/24135486/answer/0
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? LIMIT 1
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:40:39 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:40:39  INFO [   worker@thread-3 ]       c.b.s.n.HttpServerHandler :  200     7ms  GET    /question/24135486/answer/0
+2019/09/14 12:41:47 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:41:47 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:41:47 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:41:47 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:41:47 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:41:47 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:42:12  WARN [ HikariPool-1 housekeeper ]              c.z.h.p.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s537ms995µs500ns).
+2019/09/14 12:42:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? LIMIT 1
+2019/09/14 12:42:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:42:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:42:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:42:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:42:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:42:12  INFO [   worker@thread-3 ]       c.b.s.n.HttpServerHandler :  200  25005ms  GET    /question/24135486/answer/0
+2019/09/14 12:42:19  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.env          => default
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.pid          => 3524
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.devMode      => true
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : jdk.version      => 1.8.0_162
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.dir         => D:\projects\bihu
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : java.io.tmpdir   => C:\Users\fanfp\AppData\Local\Temp\
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.timezone    => Asia/Shanghai
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : file.encoding    => UTF-8
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.classpath    => D:/projects/bihu/target/classes/
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /get_question_list
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /question/:qid/answer/:aid
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Register bean: [top.fanfpy.config.LoadConfig@20ffd8c3, top.fanfpy.controller.IndexController@5e143bf7, com.blade.Environment@57617ef9, top.fanfpy.dao.AnswerDao@71b3214f, top.fanfpy.dao.QuestionDao@2fd4c67a, top.fanfpy.dao.TopicDao@50609bf4, top.fanfpy.dao.QuestionTopicDao@caaa1b7, top.fanfpy.config.LoadConfig@20ffd8c3, top.fanfpy.dao.UserDao@647b5034, top.fanfpy.controller.QuestionController@6d95bdd7]
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2019/09/14 12:42:20 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Execute SQL => show tables
+2019/09/14 12:42:20 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Parameters  => []
+2019/09/14 12:42:20 DEBUG [          _(:3」∠)_ ]                       o.s.Query : total: 24 ms; executed update [No name]
+2019/09/14 12:42:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Use NioEventLoopGroup
+2019/09/14 12:42:21  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade initialize successfully, Time elapsed: 2025 ms
+2019/09/14 12:42:21  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade start with  0.0.0.0:9000 
+2019/09/14 12:42:21  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Open browser access http://127.0.0.1:9000 ⚡
+
+2019/09/14 12:42:24 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:42:24 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:42:24 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 13 ms, execution: 3 ms, reading and parsing: 10 ms; executed [null]
+2019/09/14 12:42:24 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:42:24 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:42:24 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:42:36 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? LIMIT 1
+2019/09/14 12:42:36 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:42:36 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 5 ms, execution: 4 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:43:13  WARN [ HikariPool-1 housekeeper ]              c.z.h.p.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s557ms364µs100ns).
+2019/09/14 12:46:06  WARN [ HikariPool-1 housekeeper ]              c.z.h.p.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m53s714ms693µs300ns).
+2019/09/14 12:46:07 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:46:07 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:46:07 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:46:07  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200  222423ms  GET    /question/24135486/answer/0
+2019/09/14 12:46:10  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.env          => default
+2019/09/14 12:46:10  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.pid          => 17160
+2019/09/14 12:46:10  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.devMode      => true
+2019/09/14 12:46:10  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : jdk.version      => 1.8.0_162
+2019/09/14 12:46:10  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.dir         => D:\projects\bihu
+2019/09/14 12:46:10  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : java.io.tmpdir   => C:\Users\fanfp\AppData\Local\Temp\
+2019/09/14 12:46:10  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.timezone    => Asia/Shanghai
+2019/09/14 12:46:10  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : file.encoding    => UTF-8
+2019/09/14 12:46:10  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.classpath    => D:/projects/bihu/target/classes/
+2019/09/14 12:46:11  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /get_question_list
+2019/09/14 12:46:11  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /question/:qid/answer/:aid
+2019/09/14 12:46:11  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Register bean: [top.fanfpy.config.LoadConfig@20ffd8c3, top.fanfpy.controller.IndexController@5e143bf7, com.blade.Environment@57617ef9, top.fanfpy.dao.AnswerDao@71b3214f, top.fanfpy.dao.QuestionDao@2fd4c67a, top.fanfpy.dao.TopicDao@50609bf4, top.fanfpy.dao.QuestionTopicDao@caaa1b7, top.fanfpy.config.LoadConfig@20ffd8c3, top.fanfpy.dao.UserDao@647b5034, top.fanfpy.controller.QuestionController@6d95bdd7]
+2019/09/14 12:46:11  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2019/09/14 12:46:11  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2019/09/14 12:46:11 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Execute SQL => show tables
+2019/09/14 12:46:11 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Parameters  => []
+2019/09/14 12:46:11 DEBUG [          _(:3」∠)_ ]                       o.s.Query : total: 27 ms; executed update [No name]
+2019/09/14 12:46:11  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Use NioEventLoopGroup
+2019/09/14 12:46:13  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade initialize successfully, Time elapsed: 2131 ms
+2019/09/14 12:46:13  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade start with  0.0.0.0:9000 
+2019/09/14 12:46:13  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Open browser access http://127.0.0.1:9000 ⚡
+
+2019/09/14 12:46:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:46:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:46:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 12 ms, execution: 3 ms, reading and parsing: 9 ms; executed [null]
+2019/09/14 12:46:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:46:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:46:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:46:21 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? LIMIT 1
+2019/09/14 12:46:21 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:46:21 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:46:21 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:46:21 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:46:21 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:46:21  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200  4207ms  GET    /question/24135486/answer/0
+2019/09/14 12:46:45  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.env          => default
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.pid          => 2564
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.devMode      => true
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : jdk.version      => 1.8.0_162
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.dir         => D:\projects\bihu
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : java.io.tmpdir   => C:\Users\fanfp\AppData\Local\Temp\
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.timezone    => Asia/Shanghai
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : file.encoding    => UTF-8
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.classpath    => D:/projects/bihu/target/classes/
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /get_question_list
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /question/:qid/answer/:aid
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Register bean: [top.fanfpy.config.LoadConfig@1d150fff, top.fanfpy.controller.IndexController@6fea54ab, com.blade.Environment@644926e7, top.fanfpy.dao.AnswerDao@72f21a6a, top.fanfpy.dao.QuestionDao@472d893c, top.fanfpy.dao.TopicDao@7a5fd27e, top.fanfpy.dao.QuestionTopicDao@570cadcc, top.fanfpy.config.LoadConfig@1d150fff, top.fanfpy.dao.UserDao@35cfdc0d, top.fanfpy.controller.QuestionController@1e00d7e1]
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2019/09/14 12:46:46 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Execute SQL => show tables
+2019/09/14 12:46:46 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Parameters  => []
+2019/09/14 12:46:46 DEBUG [          _(:3」∠)_ ]                       o.s.Query : total: 23 ms; executed update [No name]
+2019/09/14 12:46:46  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Use NioEventLoopGroup
+2019/09/14 12:46:47  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade initialize successfully, Time elapsed: 2006 ms
+2019/09/14 12:46:47  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade start with  0.0.0.0:9000 
+2019/09/14 12:46:47  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Open browser access http://127.0.0.1:9000 ⚡
+
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 13 ms, execution: 3 ms, reading and parsing: 10 ms; executed [null]
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ?
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:46:54 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:46:54  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200    96ms  GET    /question/24135486/answer/0
+2019/09/14 12:47:54  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.env          => default
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.pid          => 14196
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.devMode      => true
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : jdk.version      => 1.8.0_162
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.dir         => D:\projects\bihu
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : java.io.tmpdir   => C:\Users\fanfp\AppData\Local\Temp\
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.timezone    => Asia/Shanghai
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : file.encoding    => UTF-8
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.classpath    => D:/projects/bihu/target/classes/
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /get_question_list
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /question/:qid/answer/:aid
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Register bean: [top.fanfpy.config.LoadConfig@68ca6484, top.fanfpy.controller.IndexController@fda5a25, com.blade.Environment@6f4ae627, top.fanfpy.dao.AnswerDao@1dfba8e1, top.fanfpy.dao.QuestionDao@262e019e, top.fanfpy.dao.QuestionTopicDao@7b787c0c, top.fanfpy.dao.TopicDao@433bd69a, top.fanfpy.config.LoadConfig@68ca6484, top.fanfpy.dao.UserDao@347c2bc, top.fanfpy.controller.QuestionController@553301bb]
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2019/09/14 12:47:55 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Execute SQL => show tables
+2019/09/14 12:47:55 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Parameters  => []
+2019/09/14 12:47:55 DEBUG [          _(:3」∠)_ ]                       o.s.Query : total: 26 ms; executed update [No name]
+2019/09/14 12:47:55  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Use NioEventLoopGroup
+2019/09/14 12:47:56  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade initialize successfully, Time elapsed: 1976 ms
+2019/09/14 12:47:56  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade start with  0.0.0.0:9000 
+2019/09/14 12:47:56  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Open browser access http://127.0.0.1:9000 ⚡
+
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 14 ms, execution: 3 ms, reading and parsing: 11 ms; executed [null]
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ?
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:47:57 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:47:57  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200    95ms  GET    /question/24135486/answer/0
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 2 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ?
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:50:17 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:50:17  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200     7ms  GET    /question/24135486/answer/0
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ?
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:50:30 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:50:30  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200     7ms  GET    /question/24135486/answer/2
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ?
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:50:35 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:50:35  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200     9ms  GET    /question/24135486/answer/5
+2019/09/14 12:51:02  WARN [   worker@thread-1 ] c.b.m.h.DefaultExceptionHandler :  404          GET    /question/24135486/answer/
+2019/09/14 12:51:02  INFO [   worker@thread-1 ]               j.t.JetEngineImpl : JetEngine.version = 2.1.6
+2019/09/14 12:51:02  INFO [   worker@thread-1 ]               j.t.JetEngineImpl : JetEngine.loader = jetbrick.template.loader.ClasspathResourceLoader, root = /templates/, reload = true
+2019/09/14 12:51:02  INFO [   worker@thread-1 ]           j.t.r.c.ClassResolver : import package: java.lang.*
+2019/09/14 12:51:02  INFO [   worker@thread-1 ]           j.t.r.c.ClassResolver : import package: java.util.*
+2019/09/14 12:51:02  INFO [   worker@thread-1 ]   j.t.r.m.MethodInvokerResolver : import 38 methods from class jetbrick.template.runtime.buildin.JetMethods
+2019/09/14 12:51:02  INFO [   worker@thread-1 ] j.t.r.f.FunctionInvokerResolver : import 11 functions from class jetbrick.template.runtime.buildin.JetFunctions
+2019/09/14 12:51:02  INFO [   worker@thread-1 ]      j.t.r.t.TagInvokerResolver : import 2 tags from class jetbrick.template.runtime.buildin.JetTags
+2019/09/14 12:51:02  INFO [   worker@thread-1 ]            j.t.r.GlobalResolver : Scanning @JetMethods, @JetFunctions, @JetTags implements from [top.fanfpy] ...
+2019/09/14 12:51:02  INFO [   worker@thread-1 ]            j.t.r.GlobalResolver : Found 0 annotated classes, time elapsed 14 ms.
+2019/09/14 12:51:02  INFO [   worker@thread-1 ]             j.t.JetTemplateImpl : Loading template: my_404.html
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ?
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:51:05 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:51:05  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200     8ms  GET    /question/24135486/answer/5
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.env          => default
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.pid          => 12372
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.devMode      => true
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : jdk.version      => 1.8.0_162
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.dir         => D:\projects\bihu
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : java.io.tmpdir   => C:\Users\fanfp\AppData\Local\Temp\
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.timezone    => Asia/Shanghai
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : file.encoding    => UTF-8
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.classpath    => D:/projects/bihu/target/classes/
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /get_question_list
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /question/:qid/answer/:aid
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Register bean: [top.fanfpy.config.LoadConfig@20ffd8c3, top.fanfpy.controller.IndexController@5e143bf7, com.blade.Environment@57617ef9, top.fanfpy.dao.AnswerDao@71b3214f, top.fanfpy.dao.QuestionDao@2fd4c67a, top.fanfpy.dao.TopicDao@50609bf4, top.fanfpy.dao.QuestionTopicDao@caaa1b7, top.fanfpy.config.LoadConfig@20ffd8c3, top.fanfpy.dao.UserDao@647b5034, top.fanfpy.controller.QuestionController@6d95bdd7]
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2019/09/14 12:51:50 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Execute SQL => show tables
+2019/09/14 12:51:50 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Parameters  => []
+2019/09/14 12:51:50 DEBUG [          _(:3」∠)_ ]                       o.s.Query : total: 23 ms; executed update [No name]
+2019/09/14 12:51:50  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Use NioEventLoopGroup
+2019/09/14 12:51:52  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade initialize successfully, Time elapsed: 2346 ms
+2019/09/14 12:51:52  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade start with  0.0.0.0:9000 
+2019/09/14 12:51:52  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Open browser access http://127.0.0.1:9000 ⚡
+
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 13 ms, execution: 2 ms, reading and parsing: 11 ms; executed [null]
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? LIMIT 1
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [5]
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:51:55 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:51:55  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200    98ms  GET    /question/24135486/answer/5
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? LIMIT 1
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [818904251]
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:52:33 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:52:33  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200    10ms  GET    /question/24135486/answer/818904251
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? LIMIT 1
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [818904251]
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 12:58:01 DEBUG [   worker@thread-2 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 12:58:01  INFO [   worker@thread-2 ]       c.b.s.n.HttpServerHandler :  200     9ms  GET    /question/24135486/answer/818904251
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.env          => default
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.pid          => 2680
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.devMode      => true
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : jdk.version      => 1.8.0_162
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.dir         => D:\projects\bihu
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : java.io.tmpdir   => C:\Users\fanfp\AppData\Local\Temp\
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : user.timezone    => Asia/Shanghai
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : file.encoding    => UTF-8
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : app.classpath    => D:/projects/bihu/target/classes/
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /get_question_list
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]            c.b.m.r.RouteMatcher : Add route  GET     /question/:qid/answer/:aid
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Register bean: [top.fanfpy.config.LoadConfig@696b095e, top.fanfpy.controller.IndexController@523a104d, com.blade.Environment@349e2734, top.fanfpy.dao.AnswerDao@6b8717f, top.fanfpy.dao.QuestionDao@3728b90f, top.fanfpy.dao.QuestionTopicDao@35127fdf, top.fanfpy.dao.TopicDao@70f049ce, top.fanfpy.config.LoadConfig@696b095e, top.fanfpy.dao.UserDao@3586ed26, top.fanfpy.controller.QuestionController@4714da58]
+2019/09/14 13:02:17  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2019/09/14 13:02:18  INFO [          _(:3」∠)_ ]          c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2019/09/14 13:02:18 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Execute SQL => show tables
+2019/09/14 13:02:18 DEBUG [          _(:3」∠)_ ]                       o.s.Query : Parameters  => []
+2019/09/14 13:02:18 DEBUG [          _(:3」∠)_ ]                       o.s.Query : total: 28 ms; executed update [No name]
+2019/09/14 13:02:18  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Use NioEventLoopGroup
+2019/09/14 13:02:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade initialize successfully, Time elapsed: 2227 ms
+2019/09/14 13:02:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Blade start with  0.0.0.0:9000 
+2019/09/14 13:02:20  INFO [          _(:3」∠)_ ]             c.b.s.n.NettyServer : Open browser access http://127.0.0.1:9000 ⚡
+
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 17 ms, execution: 3 ms, reading and parsing: 14 ms; executed [null]
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? AND qid = ?
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [818904251, 24135486]
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 2 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 13:02:20 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:02:20  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200   120ms  GET    /question/24135486/answer/818904251
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? AND qid = ?
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [818904251, 24135486]
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 13:02:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:02:29  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200     8ms  GET    /question/24135486/answer/818904251
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? AND qid = ?
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [786942910, 24135486]
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 13:02:50 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:02:50  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200     9ms  GET    /question/24135486/answer/786942910
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? AND qid = ?
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [786942910, 24135486]
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 2 ms, execution: 2 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 13:03:13 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:03:13  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200     7ms  GET    /question/24135486/answer/786942910
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? AND qid = ?
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [786942910, 24135486]
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 13:03:29 DEBUG [   worker@thread-1 ]                       o.s.Query : Total       => 4 ms, execution: 4 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 13:03:29  INFO [   worker@thread-1 ]       c.b.s.n.HttpServerHandler :  200    12ms  GET    /question/24135486/answer/786942910
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 3 ms, execution: 3 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? AND qid = ?
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [786942910, 24135486]
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 16:45:12 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:45:12  INFO [   worker@thread-3 ]       c.b.s.n.HttpServerHandler :  200    10ms  GET    /question/24135486/answer/786942910
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? AND qid = ?
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [786942910, 24135486]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:45:14  INFO [   worker@thread-3 ]       c.b.s.n.HttpServerHandler :  200     6ms  GET    /question/24135486/answer/786942910
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? AND qid = ?
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [786942910, 24135486]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 16:45:14 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:45:14  INFO [   worker@thread-3 ]       c.b.s.n.HttpServerHandler :  200     5ms  GET    /question/24135486/answer/786942910
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? AND qid = ?
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [786942910, 24135486]
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 16:45:20 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:45:20  INFO [   worker@thread-3 ]       c.b.s.n.HttpServerHandler :  200     7ms  GET    /question/24135486/answer/786942910
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT COUNT(*) FROM question
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => []
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM question LIMIT 0,5
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => []
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 2 ms, execution: 0 ms, reading and parsing: 2 ms; executed [null]
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ? ORDER BY up desc LIMIT 1
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [19933883]
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 2 ms, execution: 1 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ? ORDER BY up desc LIMIT 1
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [20212495]
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ? ORDER BY up desc LIMIT 1
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [20362792]
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ? ORDER BY up desc LIMIT 1
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [20448164]
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ? ORDER BY up desc LIMIT 1
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Parameters  => [21478633]
+2019/09/14 16:45:46 DEBUG [   worker@thread-3 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:45:46  INFO [   worker@thread-3 ]       c.b.s.n.HttpServerHandler :  200    27ms  GET    /get_question_list
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Execute SQL => SELECT COUNT(*) FROM question
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Parameters  => []
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Execute SQL => SELECT * FROM question LIMIT 0,5
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Parameters  => []
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ? ORDER BY up desc LIMIT 1
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Parameters  => [19933883]
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ? ORDER BY up desc LIMIT 1
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Parameters  => [20212495]
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ? ORDER BY up desc LIMIT 1
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Parameters  => [20362792]
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ? ORDER BY up desc LIMIT 1
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Parameters  => [20448164]
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE qid = ? ORDER BY up desc LIMIT 1
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Parameters  => [21478633]
+2019/09/14 16:52:45 DEBUG [   worker@thread-4 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:52:45  INFO [   worker@thread-4 ]       c.b.s.n.HttpServerHandler :  200    11ms  GET    /get_question_list
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Execute SQL => SELECT * FROM question WHERE id = ? LIMIT 1
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Execute SQL => SELECT * FROM user WHERE id = ? LIMIT 1
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Parameters  => [0]
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Total       => 0 ms, execution: 0 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Execute SQL => SELECT * FROM answer WHERE id = ? AND qid = ?
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Parameters  => [786942910, 24135486]
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Total       => 1 ms, execution: 0 ms, reading and parsing: 1 ms; executed [null]
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Execute SQL => SELECT * FROM question_topic WHERE qid = ?
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Parameters  => [24135486]
+2019/09/14 16:53:02 DEBUG [   worker@thread-4 ]                       o.s.Query : Total       => 1 ms, execution: 1 ms, reading and parsing: 0 ms; executed [null]
+2019/09/14 16:53:02  INFO [   worker@thread-4 ]       c.b.s.n.HttpServerHandler :  200     6ms  GET    /question/24135486/answer/786942910
