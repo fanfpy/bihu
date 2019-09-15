@@ -4,6 +4,9 @@ import com.blade.ioc.annotation.Inject;
 import com.blade.mvc.RouteContext;
 import com.blade.mvc.annotation.GetRoute;
 import com.blade.mvc.annotation.Path;
+import com.blade.mvc.http.Session;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import top.fanfpy.core.ResultGenerator;
 import top.fanfpy.dao.AnswerDao;
 import top.fanfpy.dao.QuestionDao;
@@ -23,12 +26,14 @@ public class IndexController {
     @Inject
     QuestionDao questionDao ;
 
+    private Logger log = LoggerFactory.getLogger(IndexController.class);
+
 
     @GetRoute("/get_question_list")
     public void getQuestionList(RouteContext routeContext){
-
-       List<Map<String,Object>> mapList = new ArrayList<>();
-
+        Session session = routeContext.session();
+        log.info("id = {}, ip ={}",session.id(),session.ip());
+        List<Map<String,Object>> mapList = new ArrayList<>();
         questionDao.finAllByPage(1,5).forEach(
                 e->{
                     Map<String,Object> map = new HashMap<>();
