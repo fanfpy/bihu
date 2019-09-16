@@ -9,8 +9,8 @@ mvnw.cmd
 .idea
 *.iws
 *.iml
-*.ipr
 *.log
+*.jar
 
 ### NetBeans ###
 /nbproject/private/
