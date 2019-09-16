@@ -20,7 +20,7 @@ public class BaseDao<T extends Model>{
         return t.save().asInt();
     }
 
-    public T deleteById(Long id, Class<T> modelClass) {
+    public T deleteById(Long id) {
         return delete().from(getTClass()).byId(id);
     }
 

@@ -4,6 +4,7 @@ import com.blade.ioc.annotation.Inject;
 import com.blade.mvc.RouteContext;
 import com.blade.mvc.annotation.GetRoute;
 import com.blade.mvc.annotation.Path;
+import com.blade.mvc.http.Response;
 import com.blade.mvc.http.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,10 +30,14 @@ public class IndexController {
     private Logger log = LoggerFactory.getLogger(IndexController.class);
 
 
+    @GetRoute("/")
+    public String index(){
+        return "index.html";
+    }
+
+
     @GetRoute("/get_question_list")
-    public void getQuestionList(RouteContext routeContext){
-        Session session = routeContext.session();
-        log.info("id = {}, ip ={}",session.id(),session.ip());
+    public void getQuestionList(Response response){
         List<Map<String,Object>> mapList = new ArrayList<>();
         questionDao.finAllByPage(1,5).forEach(
                 e->{
@@ -45,6 +50,6 @@ public class IndexController {
                     mapList.add(map);
                 }
         );
-        routeContext.json(ResultGenerator.genSuccessResult(mapList));
+        response.json(ResultGenerator.genSuccessResult(mapList));
     }
 }
