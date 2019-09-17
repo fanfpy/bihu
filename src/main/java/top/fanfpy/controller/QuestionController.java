@@ -28,6 +28,7 @@ public class QuestionController {
     @Inject
     private QuestionTopicDao questionTopicDao;
 
+
     @GetRoute(value = "/:qid/answer/:aid")
     public void getQuestionAndAnswer(Response response, @PathParam Long qid , @PathParam Long aid){
         Map<String,Object> map = new HashMap<>();
