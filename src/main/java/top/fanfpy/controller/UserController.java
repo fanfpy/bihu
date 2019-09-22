@@ -1,32 +1,24 @@
 package top.fanfpy.controller;
 
-import com.blade.mvc.annotation.GetRoute;
-import com.blade.mvc.annotation.Param;
-import com.blade.mvc.annotation.Path;
-import com.blade.mvc.annotation.PostRoute;
-import com.blade.mvc.http.Request;
+import com.blade.ioc.annotation.Inject;
+import com.blade.mvc.annotation.*;
 import com.blade.mvc.http.Response;
-import top.fanfpy.core.JwtUtil;
+import top.fanfpy.core.ResultGenerator;
+import top.fanfpy.dao.UserDao;
 
-import java.util.HashMap;
-import java.util.Map;
-
-@Path("/login")
+@Path("/user")
 public class UserController {
-    @PostRoute("/")
-    public void login(@Param String username, @Param String passwd, Response response){
-       String jwt = JwtUtil.createToken(username);
 
-        Map<String,String> map = new HashMap<>();
-        map.put("jwt",jwt);
-        response.json(map);
+    @Inject
+    UserDao userDao;
+
+    @PostRoute("/login")
+    public void login(@Param String username, @Param String passwd, Response response){
+        response.json(ResultGenerator.genSuccessResult(userDao.login(username,passwd)));
     }
 
-    @GetRoute("/jwt")
-    public void getJwt(Request request,Response response){
-        String jwt = request.header("jwt");
-        String id = JwtUtil.verifyTokenAndGetUserId(jwt);
-
-        System.out.println(id);
+    @GetRoute("/:uid")
+    public void getUserInfo(@PathParam Long uid, Response response){
+       response.json(ResultGenerator.genSuccessResult(userDao.findById(uid)));
     }
 }

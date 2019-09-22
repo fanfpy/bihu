@@ -37,23 +37,23 @@
             <version>5.1.46</version>
         </dependency>
 
-<!--        模版引擎-->
+        <!--模版引擎-->
         <dependency>
             <groupId>com.bladejava</groupId>
             <artifactId>blade-template-jetbrick</artifactId>
             <version>0.1.3</version>
+        </dependency>appendAssemblyId
+
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>bulma</artifactId>
+            <version>0.7.5</version>
         </dependency>
 
         <dependency>
             <groupId>org.webjars</groupId>
-            <artifactId>jquery</artifactId>
-            <version>3.4.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>bootstrap</artifactId>
-            <version>4.3.1</version>
+            <artifactId>font-awesome</artifactId>
+            <version>5.10.1</version>
         </dependency>
 
         <dependency>

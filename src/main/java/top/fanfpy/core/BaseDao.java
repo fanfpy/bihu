@@ -7,6 +7,9 @@ import static io.github.biezhi.anima.Anima.select;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
+/**
+ * @author fanfp
+ * */
 public class BaseDao<T extends Model>{
 
     /**
