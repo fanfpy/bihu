@@ -26,7 +26,7 @@ public class AnswerDao extends BaseDao<Answer> {
         return select().from(Answer.class).where("qid",qid).all();
     }
 
-    public List<Answer> finAllByPage(int page, int size, String orderby) {
-        return select().from(Answer.class).order(orderby).page(page,size).getRows();
+    public List<Answer> finAllByPage(Long qid,int page, int size, String orderby) {
+        return select().from(Answer.class).where("qid",qid).order(orderby).page(page,size).getRows();
     }
 }

@@ -40,13 +40,13 @@ public class IndexAip {
      * */
     @GetRoute("/questions/:qid/answers")
     public void getQuestion(@PathParam Long qid, @Param(name = "size",defaultValue = "10") int size
-            ,@Param(name = "page",defaultValue = "0") int page,@Param(name = "sort_by",defaultValue = "create_time") String sort_by,Response response){
+            ,@Param(name = "page",defaultValue = "1") int page,@Param(name = "sort_by",defaultValue = "create_time") String sort_by,Response response){
         Map<String,Object> map = new HashMap<>();
         Question question = questionDao.findById(qid);
         map.put("title",question.getTitle());
         map.put("description",question.getDescription());
         map.put("create_time",question.getCreateTime().toString());
-        map.put("answer_list",answerDao.finAllByPage(page,size,sort_by));
+        map.put("answer_list",answerDao.finAllByPage(qid,page,size,sort_by));
         response.json(ResultGenerator.genSuccessResult(map));
     }
 
