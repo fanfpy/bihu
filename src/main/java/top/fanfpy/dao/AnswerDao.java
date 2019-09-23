@@ -4,6 +4,7 @@ package top.fanfpy.dao;
 import com.blade.ioc.annotation.Bean;
 import top.fanfpy.core.BaseDao;
 import top.fanfpy.model.Answer;
+import top.fanfpy.model.Question;
 
 import java.util.List;
 
@@ -19,5 +20,13 @@ public class AnswerDao extends BaseDao<Answer> {
 
     public List<Answer> finByIdAndQid(Long qid,Long id){
         return  select().from(Answer.class).where("id",id).where("qid",qid).all();
+    }
+
+    public List<Answer> finByQid(Long qid){
+        return select().from(Answer.class).where("qid",qid).all();
+    }
+
+    public List<Answer> finAllByPage(int page, int size, String orderby) {
+        return select().from(Answer.class).order(orderby).page(page,size).getRows();
     }
 }
