@@ -6,7 +6,6 @@ import com.blade.mvc.annotation.Param;
 import com.blade.mvc.annotation.Path;
 import com.blade.mvc.annotation.PathParam;
 import com.blade.mvc.http.Response;
-import com.sun.istack.internal.Interned;
 import top.fanfpy.core.ResultGenerator;
 import top.fanfpy.dao.AnswerDao;
 import top.fanfpy.dao.QuestionDao;
@@ -28,7 +27,7 @@ public class IndexAip {
     AnswerDao answerDao;
     @Inject
     UserDao userDao;
-    @Interned
+    @Inject
     QuestionTopicDao questionTopicDao;
 
     /**
@@ -46,7 +45,7 @@ public class IndexAip {
         map.put("title",question.getTitle());
         map.put("description",question.getDescription());
         map.put("create_time",question.getCreateTime().toString());
-        map.put("answer_list",answerDao.finAllByPage(qid,page,size,sort_by));
+        map.put("answer_list",answerDao.finByQidToPage(qid,page,size,sort_by));
         response.json(ResultGenerator.genSuccessResult(map));
     }
 
@@ -68,5 +67,13 @@ public class IndexAip {
         response.json(ResultGenerator.genSuccessResult(map));
     }
 
+    /**
+     * 指定作者的回答
+     * */
+    @GetRoute("members/:uid/answers")
+    public void getAnswerByUser(@PathParam Long uid,@Param(name = "page",defaultValue = "1") int page,@Param(name = "size",defaultValue = "10") int size
+            ,@Param(name = "sort_by",defaultValue = "create_time") String sort_by,Response response){
+      response.json(ResultGenerator.genSuccessResult(answerDao.finByUidToPage(uid, page, size, sort_by)));
+    }
 
 }
