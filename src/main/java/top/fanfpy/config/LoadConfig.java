@@ -14,6 +14,8 @@ import java.util.Map;
 @Order(1)
 @Bean
 public class LoadConfig implements BladeLoader {
+
+
     @Override
     public void load(Blade blade) {
         Environment environment = blade.environment();
@@ -27,5 +29,6 @@ public class LoadConfig implements BladeLoader {
         Anima.execute("show tables");
 
         blade.templateEngine(new JetbrickTemplateEngine());
+
     }
 }
